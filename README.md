@@ -14,7 +14,7 @@ check-keywords init
 
 ## Lint
 ### Work with lint-stage(Recommended)
-```json
+```
  "lint-staged": {
     "*.ts|*.tsx": [
       "npx tsc-files --noEmit",
