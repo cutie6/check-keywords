@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 const yargs = require("yargs/yargs");
 const { initHandler } = require("../lib/init");
+const path = require("path");
 const detectKeywords = require("../lib/lint");
+
+const defaultConfigFile = "check-keywords.config.js";
 
 const argv = yargs(process.argv.slice(2))
   .command({
@@ -23,7 +26,6 @@ if (!argv._[0] || argv._[0] !== "init") {
     const fileList = argv._;
 
     detectKeywords(config, fileList);
-    process.exit(1);
   } catch (error) {
     console.error("Error: ", error.message);
     process.exit(1);

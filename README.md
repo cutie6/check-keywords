@@ -9,8 +9,9 @@ npm install --save-dev check-keywords
 ## Init
 To generate default configuration file `check-keywords.config.js`
 ```bash
-check-keywords init 
+npx check-keywords init 
 ```
+Then you can customize your configurations in `check-keywords.config.js`
 
 ## Lint
 ### Work with lint-stage(Recommended)
@@ -26,5 +27,10 @@ check-keywords init
 
 ### Use it alone
 ```bash
-check-keywords src/xxx.js src/xxx.ts
+npx check-keywords src/xxx.js src/xxx.ts
+```
+
+### Use custom configuration file
+```bash
+npx check-keywords -p your.config.js src/xxx.js src/xxx.ts
 ```
