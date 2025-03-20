@@ -1,6 +1,6 @@
 {
   "name": "check-keywords",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool to check keywords in code to be committed.",
   "bin": {
     "check-keywords": "./bin/cli.js"
