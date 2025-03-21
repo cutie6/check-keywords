@@ -1,4 +1,8 @@
-## Overview
+## check-keywords
+<p align="center">
+<a href="">
+     <img width="80%" src="https://github.com/cutie6/check-keywords/blob/main/examples/example.png?raw=true"></a>
+</p>
 A tool to check keywords in code to be committed.
 
 ## Install

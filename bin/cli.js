@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 const yargs = require("yargs/yargs");
-const { initHandler } = require("../lib/init");
 const path = require("path");
+const { initHandler } = require("../lib/init");
 const detectKeywords = require("../lib/lint");
+const { defaultConfigFile } = require("../lib/common");
 
-const defaultConfigFile = "check-keywords.config.js";
 
 const argv = yargs(process.argv.slice(2))
   .command({
